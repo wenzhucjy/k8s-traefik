@@ -103,5 +103,5 @@ spec:
             name: traefik-config 
       tolerations:              ## 设置容忍所有污点，防止节点被设置污点
         - operator: "Exists"
-      nodeSelector:             ## 设置node筛选器，在特定label的节点上启动,如: kubectl label nodes k8s-master-node1 traefik=enabled
-        traefik: "enabled"
+      # nodeSelector:             ## 设置node筛选器，在特定label的节点上启动,如: kubectl label nodes k8s-master-node1 traefik=enabled
+      #   traefik: "enabled"
